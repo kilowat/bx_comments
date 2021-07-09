@@ -1016,7 +1016,7 @@ class CComments extends CBitrixComponent implements Controllerable, Errorable
      */
     private function getLinkToCommentIblockEdit($id)
     {
-        return  "https://moigk.ru/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=".$this->iblockId."&type=content&ID=".$id."&lang=ru&find_section_section=-1>";
+        return  "https://" . $_SERVER["SERVER_NAME"]."/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=".$this->iblockId."&type=content&ID=".$id."&lang=ru&find_section_section=-1>";
     }
 
     /**
